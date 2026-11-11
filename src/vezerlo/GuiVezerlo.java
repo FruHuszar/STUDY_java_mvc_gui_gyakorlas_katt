@@ -1,9 +1,27 @@
 package vezerlo;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import nezet.GuiNezet;
+
 /**
  *
  * @author HuszárFruzsinaAnna(S
  */
 public class GuiVezerlo {
-    //...
+    /*private Modell modell; //Most nincs*/
+    private GuiNezet nezet;
+
+    public GuiVezerlo(GuiNezet nezet) {
+        this.nezet = nezet;
+        
+        JButton btn = nezet.getBtnKiir();
+        btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Katt");
+            }
+        });
+    }
 }
