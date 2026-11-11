@@ -3,6 +3,7 @@ package vezerlo;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import nezet.GuiNezet;
 
 /**
@@ -17,10 +18,13 @@ public class GuiVezerlo {
         this.nezet = nezet;
         
         JButton btn = nezet.getBtnKiir();
+        JLabel lbl = nezet.getLblKiir();
+        
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Katt");
+                //System.out.println("Katt");
+                lbl.setText("Katt");
             }
         });
     }
