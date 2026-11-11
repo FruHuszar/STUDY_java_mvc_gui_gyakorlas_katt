@@ -23,7 +23,7 @@ public class GuiVezerlo {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("Katt");
-                nezet.megjelenit("Katt\n");
+                nezet.megjelenit("Katt" + System.lineSeparator());
             }
         });
     }
