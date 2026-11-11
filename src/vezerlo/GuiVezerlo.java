@@ -24,7 +24,8 @@ public class GuiVezerlo {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("Katt");
-                nezet.megjelenit("Katt");
+                String sz = lbl.getText();
+                nezet.megjelenit(sz + " Katt");
             }
         });
     }
